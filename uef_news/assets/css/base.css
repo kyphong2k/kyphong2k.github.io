@@ -1,0 +1,22 @@
+:root{
+    
+    --primary-color: #f7432e;
+    --star-gold-color: #ffce3e;
+    --header-height: 81px;
+}
+*{
+    box-sizing: inherit;
+    /* kế thừa từ thành phần chứa nó */
+    /*  *{set cho tất cả các element} */
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* sử dụng font-size 62.5% thì line-heigh: 1.2rem = 12px 1.6rem= 16px */
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

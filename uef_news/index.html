@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.1/respond.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Uef-News</title>
+</head>
+<body>
+    <div class="app">
+        <!-- header begin -->
+        <header class="header">
+            <div class="grid">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="header__logo col l-2 c-2 m-2">
+                            <a href="#">
+                                <img src="./assets/img/logo-web.png" alt="logo_website" class="logo__img">
+                            </a>
+                        </div>
+                        <div class="header__navbar col l-4 m-4 c-0">
+                                <div class="navbar">
+                                    <ul class="navbar__list">
+                                        <li class="navbar__list-item">
+                                            <a href="#tin_tuc" class="navbar__list-item-link">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                        <li class="navbar__list-item">
+                                            <a href= "#lich_su_kien" class="navbar__list-item-link">
+                                                Lịch sự kiện
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="header__right col l-6 m-6 c-0">
+                                <div class="header__search">
+                                        <input type="text" placeholder="Tìm kiếm sự kiện" class="input__search">
+                                        <div class="header__search-icon">
+                                            <i class="fas fa-search" ></i>
+                                        </div>
+                                </div>
+                                <div class="header__login">
+                                    <a href="#" class="navbar__list-item-link">ĐĂNG NHẬP</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- header end -->
+
+        <!-- banner begin -->
+        <div id="banner" class="grid">
+            <div class="banner__content">
+                <p class="banner__title w3-animate-bottom">Chào mừng bạn đến với trang tin tức UEF</p>
+                <p class="banner__description">Nơi bạn có thể đọc những tin tức sự kiện mới nhất</p>
+            </div>
+        </div>
+        <!-- banner end -->
+
+        <!-- main container begin -->
+        <div class="main-container">
+            <!--begin first container -->
+            <div class="first-container grid">
+                <div class="container grid wide">
+                    <h2 class="container__title" id="tin_tuc">Tin tức</h2>
+                    <p class="container__description">Tổng hợp tin tức theo danh mục</p>
+                    <div class="general-news row">
+                        <div class="col l-6 m-6 c-12">
+                            <!-- side-left-content begin -->
+                            <div class="content-left-side">
+                                <!-- first category begin -->
+                                <div class="box-news">
+                                    <h3 class="new-title">Nổi bật</h3>
+                                    <div class="box-news__slides">
+                                        <div class="category-1 owl-carousel owl-theme">
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">05/01/2022</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">UEF mở rộng bản đồ doanh nghiệp đối tác trong lĩnh vực du lịch - nhà hàng - khách sạn</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/noibat1.jpeg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">05/01/2022</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">UEF khai mạc khóa tập huấn "Thủ lĩnh sinh viên sáng tạo" với các thông tin chi tiết về Movers</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/noibat2.jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">27/12/2021</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Đối tác đào tạo quốc tế của UEF vào top những trường đại học hàng đầu tại Mỹ năm 2022</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/noibat3.jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">17/12/2021</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Tham khảo phân tích của chuyên gia về nhóm ngành kinh tế, tài chính, kinh doanh để lựa chọn phù hợp</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/noibat4.jpg" 
+                                                    class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                        </div>
+                                        <button class="moving-slide-btn prev-slide-btn prev-slide-btn-1">
+                                            <i class="fas fa-step-backward"></i>
+                                        </button>
+                                        <button class="moving-slide-btn next-slide-btn next-slide-btn-1">
+                                            <i class="fas fa-step-forward"></i>
+                                        </button>
+                                    </div>
+                                    <button class="open-item-list">
+                                        Xem thêm
+                                    </button>
+                                </div>
+                                <!-- first category end -->
+
+                                <!-- second category begin -->
+                                <div class="box-news">
+                                    <h3 class="new-title">Cuộc thi</h3>
+                                    <div class="box-news__slides">
+                                        <div class="category-2 owl-carousel owl-theme">
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">06/01/2016</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Thỏa sức sáng tạo cùng cuộc thi “Blogger Tài chính UEF 2016”
+                                                    </h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/cuocthi1.jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">15/12/2015</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">UEF phát động Giải thưởng “Cán bộ - Giảng viên trẻ tiêu biểu”</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/cuocthi2.jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">02/11/2015</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Sinh viên UEF đạt giải Nhì cuộc thi “Nielsen Case Competition 2015”</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/cuocthi3.jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">26/10/2015</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Quán quân cuộc thi ESC 2015 chính thức “lộ diện”</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/cuocthi4.jpg" 
+                                                    class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                        </div>
+                                        <button class="moving-slide-btn prev-slide-btn prev-slide-btn-2">
+                                            <i class="fas fa-step-backward"></i>
+                                        </button>
+                                        <button class="moving-slide-btn next-slide-btn next-slide-btn-2">
+                                            <i class="fas fa-step-forward"></i>
+                                        </button>
+                                    </div>
+                                    <button class="open-item-list">
+                                        Xem thêm
+                                    </button>
+                                </div>
+                                <!-- second category end -->
+                            </div>
+                            <!-- left side content end -->
+                        </div>
+                        <div class="col l-6 m-6 c-12">
+                            <!-- side right content begin -->
+                            <div class="content-right-side">
+                                <!-- third category begin -->
+                                <div class="box-news">
+                                    <h3 class="new-title">Đoàn hội</h3>
+                                    <div class="box-news__slides">
+                                        <div class="category-3 owl-carousel owl-theme">
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">04/04/2016</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Sinh viên UEF “cháy” hết mình cùng Hội trại Sức trẻ UEF 2016
+                                                    </h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/doanhoi1.jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">24/03/2016</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">[Youth Camp UEF 2016] Đốt cháy giới hạn với các trò chơi đầy thử thách</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/doanhoi2.jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">19/01/2016</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Nô nức Hội chào xuân của sinh viên UEF</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/doanhoi3.jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">09/01/2016</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Hội xuân UEF 2016: Hứa hẹn một không gian Tết Việt đầy màu sắc</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/doanhoi4.jpg" 
+                                                    class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                        </div>
+                                        <button class="moving-slide-btn prev-slide-btn prev-slide-btn-3">
+                                            <i class="fas fa-step-backward"></i>
+                                        </button>
+                                        <button class="moving-slide-btn next-slide-btn next-slide-btn-3">
+                                            <i class="fas fa-step-forward"></i>
+                                        </button>
+                                    </div>
+                                    <button class="open-item-list">
+                                        Xem thêm
+                                    </button>
+                                </div>
+                                <!-- third category end -->
+
+                                <!-- fourth category begin -->
+                                <div class="box-news">
+                                    <h3 class="new-title">Câu lạc bộ</h3>
+                                    <div class="box-news__slides">
+                                        <div class="category-4 owl-carousel owl-theme">
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">01/01/2022</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Chưa có nội dung về danh mục này (ảnh minh họa)</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/khaimac-tuyensinh-2022-19copy-1640767726.jpg" 
+                                                    class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">01/01/2022</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Chưa có nội dung về danh mục này (ảnh minh họa)</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/noibat1.jpeg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">01/01/2022</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Chưa có nội dung về danh mục này (ảnh minh họa)</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/dautu-chungkhoan-6-1637555405.jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                            <div class="item">
+                                                <div class="box-news__content">
+                                                    <h5 class="post-date">01/01/2022</h5>
+                                                    <h5 class="post-title  w3-animate-bottom">Chưa có nội dung về danh mục này (ảnh minh họa)</h5>
+                                                   <div class="box-news__button">
+                                                       <button class="post-open-btn w3-animate-bottom">
+                                                           Xem chi tiết
+                                                       </button>
+                                                   </div>
+                                                </div>
+                                                    <img src="./assets/img/content_img/uef-doanh-nghiep-noi-gi-ve-sinh-vien-2021 (4).jpg" class="box-news__content-img" alt="ảnh minh họa">
+                                            </div>
+                                        </div>
+                                        <button class="moving-slide-btn prev-slide-btn prev-slide-btn-4">
+                                            <i class="fas fa-step-backward"></i>
+                                        </button>
+                                        <button class="moving-slide-btn next-slide-btn next-slide-btn-4">
+                                            <i class="fas fa-step-forward"></i>
+                                        </button>
+                                    </div>
+                                    <button class="open-item-list">
+                                        Xem thêm
+                                    </button>
+                                </div>
+                                <!-- fourth category end -->
+                            </div>
+                            <!-- side right content end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end first container  -->
+
+            <!-- begin second container -->
+            <div class="second-container grid">
+
+                <div class="container grid wide">
+                    <h2 class="container__title" id="lich_su_kien">Lịch sự kiện</h2>
+                    <p class="container__description">Tổng hợp tin tức</p>
+                    <div class="general-news row">
+                        <div class="col l-7 m-7 c-12">
+                            <div class="content-left-side">
+                                <div class="box-news">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-5 m-5 c-12">
+                            <div class="content-right-side">
+                                <div class="box-news"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>    
+            </div>
+            <!-- end second container -->
+        <!-- main container end -->
+        <footer class=" footer">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </footer>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<script src="./assets/js/stickyHeader.js"></script>
+<script src="./assets/js/jquery.js"></script>
+</html>
