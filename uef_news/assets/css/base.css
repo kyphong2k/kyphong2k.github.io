@@ -1,0 +1,28 @@
+:root{
+    --header-height: 81px;
+}
+*{
+    box-sizing: inherit;
+    /* kế thừa từ thành phần chứa nó */
+    /*  *{set cho tất cả các element} */
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* sử dụng font-size 62.5% thì line-heigh: 1.2rem = 12px 1.6rem= 16px */
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    cursor:default;
+}
+body{
+    /* turn off text selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
