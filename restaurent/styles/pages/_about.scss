@@ -1,0 +1,165 @@
+@use "../abstracts" as *;
+
+.know-more{
+    padding: $pd-left-right;
+    padding-top: $mt-top;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    &-about__left {
+        padding-bottom: 8rem;
+        .feature {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 4rem;
+            column-gap: 3.2rem;
+            &__card {
+                &-title {
+                    display: inline-block;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #C4E4EA;
+                }
+                p {
+                    @include descText;
+                }
+                &-desc {
+                    margin-top: 1.5rem;
+                    @include descText;
+                }
+            }
+            
+
+        }
+
+    }
+    &__right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6.5rem;
+        .box-img-1{
+            display: flex;
+            width: 100%;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        .box-img-2{
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+    }
+}
+
+//banner
+
+.banner {
+    padding: $pd-left-right;
+    padding-top: 16rem;
+    
+    &-img {
+        position: relative;
+        width: 100%;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0 ;
+            left: 0;
+            right: 0;
+            background: linear-gradient(97.28deg, rgba(25, 22, 27, 0.92) 34.6%, rgba(25, 22, 27, 0) 83.17%);
+        }
+       img {
+           max-width: 100%;
+           object-fit: cover;
+       }
+       &__content {
+           position: absolute;
+           z-index: 2;
+           padding-left: 2.4rem;
+           top: 50%;
+           transform: translateY(-50%);
+           h2 {
+               span {
+                   color: $clr-clone-project;
+               }
+               margin-top: 0;
+           }
+           .paragraph {
+               margin-top: 2.4rem;  
+               @include descText;
+           }
+       }
+    }
+}
+
+// our history
+
+.our-history {
+    margin: $pd-left-right;
+    background: rgba(255, 255, 255, 0.03);
+    &__content {
+        padding: 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+        h3 {
+            margin-top: 0;
+        }
+        &-card {
+            display: grid;
+            
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 4rem;
+            border-top: 2px dashed rgba(255, 255, 255, 0.15);
+            .card-item {
+                position: relative;
+                padding-top: 3.4rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                .year-text {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 44px;
+                    color: #FFFFFF;
+                }
+                .paragraph {
+                    @include descText;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -4px;
+                    width:4.6rem;
+                    height: 0.3rem;
+                    background-color: $clr-clone-project;
+                }
+            }
+        }
+    }
+}
+
+// open letter 
+
+.open-letter {
+    padding: $pd-left-right;
+    padding-top: $mt-top;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16rem;
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        .paragraph {
+            @include descText;
+        }
+    }
+}

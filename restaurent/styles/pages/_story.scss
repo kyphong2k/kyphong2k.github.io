@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+.story {
+    display: grid;
+    padding: $pd-left-right;
+    padding-top: 16rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 11rem;
+    &-left {
+        display: flex;
+        flex-direction: column;
+        .paragraph {
+            padding-top: 2.4rem;
+            @include descText;
+        }
+        .box-img {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 6.5rem;
+            margin-top: 3.2rem;
+            padding-bottom: 4rem;
+            &-1{
+                margin-top: 4rem;
+                display: flex;
+                width: 100%;
+                align-items: flex-end;
+                justify-content: flex-start;
+            }
+            &-2{
+                display: flex;
+                width: 100%;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+        }
+    }
+    &-right {
+        .h3heading {
+            margin-top: 2rem;
+            margin-bottom: 2.4rem;
+            span {
+                color: $clr-clone-project;
+            }
+        }
+        .paragraph {
+            @include descText;
+            margin-bottom: 1.6rem;
+        }
+        
+    }
+}

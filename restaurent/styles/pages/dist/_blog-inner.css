@@ -1,0 +1,74 @@
+.blog-content-details {
+  padding: 0 16rem;
+  padding-top: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-content-details__author {
+  display: flex;
+  gap: 1.2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2.4rem;
+  position: relative;
+}
+.blog-content-details__author::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  right: 25%;
+  left: 25%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.blog-content-details__author .author-info {
+  display: flex;
+  gap: 2.4rem;
+}
+.blog-content-details__author .author-info p:first-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+.blog-content-details__author .author-info p:last-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  opacity: 0.6;
+}
+.blog-content-details .h2heading {
+  padding-top: 3.2rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  padding: 0 16rem 8rem;
+}
+.blog-content-details__img {
+  margin-bottom: 5.6rem;
+}
+.blog-content-details__copy {
+  padding: 0 19rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.blog-content-details__copy .h3heading {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+.blog-content-details__copy p {
+  color: #B8B8B8;
+  padding-bottom: 1.6rem;
+}
+.blog-content-details__copy p:last-child {
+  padding-bottom: 0;
+}
+.blog-content-details__copy .h4heading {
+  padding-top: 3.2rem;
+  padding-bottom: 2.4rem;
+}

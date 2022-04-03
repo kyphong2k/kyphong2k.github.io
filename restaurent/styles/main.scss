@@ -1,0 +1,271 @@
+@use "abstracts" as *;
+@use "base" as *;
+@use "pages" as *;
+//npm install -D sass
+// thêm "scripts": {
+//     "watch-sass": "sass styles --no-source-map --style=compressed --watch"
+// },
+// mỗi lần chạy chỉ cần gọi yarn watch-sass;
+// lấy hết các properties được forward từ file _index.scss
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    font-size: 10px;
+}
+body {
+    
+    background-color: $bgColor;
+    color: $clr-white;
+    font-family: $font-poppin;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.active {background-color: #333333c4;}
+.h1heading {
+    @include h1font;
+}
+a{
+    text-decoration: none;
+    color: $clr-white;
+    
+}
+.title-and-line{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.6rem;
+    .title{
+        @include title;
+        display: inline-block;
+    }
+    .line{
+        width: 4.8rem;
+        height: 0.2rem;
+        margin-left: 1rem;
+        background-color: #fff;
+    }
+}
+.h2heading {
+    @include h2font;
+    margin-top: 2.4rem;
+}
+.h3heading {
+    @include h3font;
+    margin-top: 3.2rem;
+}
+.h4heading {
+    @include h4font;
+}
+.desc-text {
+    @include descText;
+    margin-top: 3.2rem;
+}
+.paragraph {
+    @include paragraph;
+}
+.view-menu-btn {
+    @include viewMenuBtn;
+    margin-top: 3.2rem;
+    cursor:pointer;
+    span{
+        @include label;
+    }
+    img{
+        padding-left: 1.4rem;
+        color: #2E2D33;
+    }
+    &:hover{
+        background-image: linear-gradient($clr-orange, $clr-white);
+        
+    }
+}
+// navbar
+
+.navbar{
+    display: flex;
+    position: fixed;
+    padding: 2.5rem 16rem;
+    z-index: 2;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    .navbar__logo{
+        padding-right: 5rem;
+    }
+    &__left{
+        display: flex;
+        align-items: center; 
+        .navbar__menu{
+            display: flex;
+            gap: 4rem;
+            a{
+                &:hover {
+                    color: $clr-clone-project;
+                }
+                font-weight: 500;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+            }
+        }       
+    }
+    &__right{
+        a{
+            color: $clr-clone-project;
+        }
+    }
+}
+
+// contact 
+
+.contact {
+    margin-top: $mt-top;
+    padding: $pd-left-right;
+    display: flex;
+    height: 53rem;
+    &-left {
+        flex-grow: 4;
+        background-color: #1F1D21;
+        &__info {
+            display: flex;
+            padding: 8rem 3.5rem 8rem 6.5rem;
+            flex-direction: column;
+            gap: 3.2rem;
+            &-working {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                .paragraph {
+                    @include paragraph;
+                    color: #B8B8B8;
+                }
+
+            }
+            &-location {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                .paragraph {
+                    @include paragraph;
+                    color: #B8B8B8;
+                }
+
+            }
+            &-contact {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                .paragraph {
+                    @include paragraph;
+                    color: #B8B8B8;
+                }
+
+            }
+        }
+    }
+    &-right {
+        flex-grow: 6;
+        // display: grid;
+        // grid-template-columns: 1fr;
+        img {
+            display: inline-block;
+            width: 100%;
+            height: 53rem;
+            object-fit: cover;
+        }
+    }
+
+}
+
+// footer
+
+.footer {
+    margin-top: $mt-top;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    &-logo {
+        margin: 0 auto 4rem;
+
+    }
+    &-menu {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        gap: 4rem;
+        padding-bottom: 3.2rem;
+        width: 100vw;
+        &::after {
+            content : "";
+            position: absolute;
+            opacity: 0.07;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border: 1px solid #FFFFFF;
+        }
+        a {
+            &:hover {
+                color: $clr-clone-project;
+            }
+            font-weight: 500;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+    &-bottom {
+        display: flex;
+        margin: $pd-left-right;
+        justify-content: space-between;
+        padding: 2.4rem 0;
+        align-items: center;
+        &-license {
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                text-transform: capitalize;
+                color: #B8B8B8;
+            }
+        }
+        &-social {
+            display: flex;
+            gap: 2.4rem;
+            margin-right: 18rem;
+            a {
+                opacity: 0.7;
+                &:hover {
+                    opacity: 1;
+                }
+                display: block;
+                font-size: 4.6rem;
+                img {
+                    height: 2rem;
+                }
+            }
+        }
+        &-contact {
+            a:hover {
+                color: #FFB577;
+
+            }
+        }
+        
+    }
+}

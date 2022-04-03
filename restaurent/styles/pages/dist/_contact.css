@@ -1,0 +1,94 @@
+.contact-container {
+  padding: 0 16rem;
+  padding-top: 16rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.contact-container__left .notice {
+  margin-top: 2.4rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  opacity: 0.6;
+}
+.contact-container__left .contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2.4rem;
+  margin-top: 4rem;
+}
+.contact-container__left .contact-form-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+.contact-container__left .contact-form-input input {
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background-color: #19161B;
+  padding: 1.4rem 0 1.4rem 3.2rem;
+  outline: #fff;
+  color: #fff;
+}
+.contact-container__left .contact-form-input input::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #ffffff;
+}
+.contact-container__left .contact-form #text-area {
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background-color: #19161B;
+  padding: 1.4rem 0 1.4rem 3.2rem;
+  outline: #fff;
+  color: #fff;
+}
+.contact-container__left .contact-form #text-area::placeholder {
+  color: #ffffff;
+}
+.contact-container__left .contact-form #submit-form {
+  margin-top: 3.2rem;
+  padding: 2rem 3.2rem;
+  background-color: #27252D;
+  max-width: 22rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #19161B;
+  cursor: pointer;
+}
+.contact-container__left .contact-form #submit-form:hover {
+  background-image: linear-gradient(#FFB577, purple);
+}
+.contact-container__left .contact-form #submit-form p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #fff;
+}
+.contact-container__right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.5rem;
+  margin-top: 4rem;
+}
+.contact-container__right-box-1 {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.contact-container__right-box-2 {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-end;
+}

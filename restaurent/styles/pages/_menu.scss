@@ -1,0 +1,82 @@
+@use '../abstracts' as *;
+
+
+// menu
+.menu-top-1{
+display: grid;
+grid-template-columns: 1fr 1fr;
+// width: 100%;
+padding: $pd-left-right;
+padding-top: 16rem;
+&__left{
+    .h2heading {
+        padding-right: 16rem;
+    }
+    .h5heading {
+        @include h5font;
+        margin-top: 3.2rem;
+    }
+}
+&__right{
+    display: flex;
+    align-items: center;
+    
+    p{
+        @include descText;
+        padding-left: 5.8rem;
+        // margin-top: 3.8rem;
+    }
+}
+}
+
+// menu filter
+
+.menu-filter {
+    
+    padding: $pd-left-right;
+    padding-top: 14rem;
+    &__category {
+        display: flex;
+        gap: 3.2rem;
+        padding-left: 3rem;
+        .h4heading {
+            &:hover {
+                color: $clr-clone-project;
+            }
+        }
+    }
+
+}
+
+// menu bottom
+
+.menu-bottom-1 {
+    padding: $pd-left-right;
+    display: grid;
+    width: 100%;
+    margin-top: 8rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.2rem;
+    &__card {
+        display: flex;
+        flex-direction: column;
+        .menu-img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .menu-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background: #1F1D21;
+            width: 100%;
+            padding: 2.4rem 2.4rem 2.4rem 3.2rem;
+            justify-content: space-between;
+            .h4heading {
+                opacity: 0.87;
+            }
+        }
+    }
+        
+    
+}

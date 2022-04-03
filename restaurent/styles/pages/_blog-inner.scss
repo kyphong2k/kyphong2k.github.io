@@ -1,0 +1,67 @@
+@use "../abstracts" as *;
+.blog-content-details {
+    padding: $pd-left-right;
+    padding-top: $mt-top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__author {
+        display: flex;
+        gap:1.2rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2.4rem;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            bottom:0;
+            right: 25%;
+            left: 25%;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .author-info {
+            display: flex;
+            gap: 2.4rem;
+            p:first-child {
+                @include paragraph;
+            }
+            p:last-child {
+                @include paragraph;
+                opacity: 0.6;
+            }
+        }
+    }
+    .h2heading {
+        padding-top: 3.2rem;
+        padding-bottom: 8rem;
+        text-align: center;
+        padding: 0  16rem 8rem;
+    }
+    &__img {
+        margin-bottom: 5.6rem;
+    }
+    &__copy {
+        padding: 0 19rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .h3heading {
+            padding-top: 2.4rem;
+            padding-bottom: 2.4rem;
+        }
+        p {
+            color: #B8B8B8;
+            padding-bottom: 1.6rem;
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+        .h4heading {
+            padding-top: 3.2rem;
+            padding-bottom: 2.4rem;
+        }
+    }
+}

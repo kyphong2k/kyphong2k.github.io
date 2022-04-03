@@ -1,0 +1,90 @@
+@use "../abstracts" as *;
+
+.contact-container {
+    padding: $pd-left-right;
+    padding-top: $mt-top;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    &__left {
+        .notice {
+            margin-top: 2.4rem;
+            @include paragraph;
+            opacity: 0.6;
+        }
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 2.4rem;
+            margin-top: 4rem;
+            &-input  {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 3.2rem;
+                margin-bottom: 2.4rem;
+                input {
+                    border: 1px solid rgba(255, 255, 255, 0.04);
+                    background-color: $bgColor;
+                    padding: 1.4rem 0 1.4rem 3.2rem;
+                    outline: #fff;
+                    color: #fff;
+                    &::placeholder {
+                        @include paragraph;
+                        color: #ffffff;
+                        
+                    }
+                }
+               
+            }
+            #text-area {
+                border: 1px solid rgba(255, 255, 255, 0.04);
+                background-color: $bgColor;
+                padding: 1.4rem 0 1.4rem 3.2rem;
+                outline: #fff;
+                color: #fff;
+                &::placeholder {
+                    color: #ffffff;
+                    
+                }
+            }
+            #submit-form {
+                margin-top: 3.2rem;
+                padding: 2rem 3.2rem;
+                background-color: #27252D;
+                max-width: 22rem;
+                display: flex;
+                gap:1.2rem;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $bgColor;
+                cursor: pointer;
+                &:hover {
+                    background-image: linear-gradient(#FFB577, purple);
+                }
+                p {
+                    @include paragraph;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &__right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6.5rem;
+        margin-top: 4rem;
+        &-box-1{
+            display: flex;
+            width: 100%;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        &-box-2{
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+
+    }
+}
